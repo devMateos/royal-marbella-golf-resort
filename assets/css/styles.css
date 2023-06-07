@@ -1,0 +1,149 @@
+/* GLOBAL */
+:root{ --dark-blue:#062436; --footer:#05151F; --main-brown:#EAAF75; --main-white:#FFFFFF; --secondary-brown: #FCF3EA; --text-gray: #676767; }
+*{ box-sizing:border-box; margin:0; padding:0; }
+html{ color: var(--text-gray); font-family: 'Lato', sans-serif; font-size: 18px; }
+header, main, section, footer { width: 100%; }
+a{ cursor:pointer; text-decoration:none; }
+body{ max-width:100%; overflow-x:hidden; }
+button{ cursor:pointer; }
+img{ object-fit: contain; max-height: 100%; max-width: 100%; }
+/* ---------------- */
+/* HEADINGS & FONTS */
+h1, .h1{ color: var(--dark-blue); font-size: 62px; }
+h2, .h2{ color: var(--dark-blue); font-size: 50px; }
+h3, .h3{ color: var(--dark-blue); font-size: 24px; }
+h4, .h4{ color: var(--dark-blue); font-size: 21px; }
+h5, .h5{ color: var(--dark-blue); font-size: 18px; }
+.font-accent{ color: var(--main-brown)!important; }
+/* BUTTON */
+.form-button{ background-color: var(--main-brown); border: solid 1px var(--dark-blue); border-radius: 25px; color: var(--dark-blue); height: 40px; outline: none; }
+.form-button:hover{ background-color: #BC9368; }
+.button-link{ background-color: var(--main-white); border-radius: 25px; color: var(--dark-blue); display: flex; font-size: 14px; height: 50px; place-items: center; place-content: center; width: 180px; }
+.button-link2{ background-color: var(--dark-blue); border-radius: 25px; color: var(--main-white); display: flex; font-size: 14px; height: 50px; place-items: center; place-content: center; width: 180px; }
+.button-link2:hover{ background-color: #23363E;}
+/* ICONS */
+.left-arrow-slider::before{ background-image: url(/assets/svg/arrow-left-solid.svg); background-repeat: no-repeat; content: "";   display: flex; height: 20px; position: relative; top: 50%; transform: translateY(-50%); min-width: 20px; }
+.right-arrow-slider::after{ background-image: url(/assets/svg/arrow-right-solid.svg); background-repeat: no-repeat; content: "";   display: flex; height: 20px; left: 10%; position: relative; top: 50%; transform: translateY(-50%); min-width: 20px; }
+/* FORM-STYLE */
+.form-style{ display: flex; flex-direction: column; font-size: 14px; gap: 4px; place-items: center; }
+.form-style input:not([type="checkbox"]), .form-style textarea{ border-radius: 10px; border-style: none; outline: none; padding: 4px 8px; width: 250px;}
+.form-style input:not([type="checkbox"]){ height: 34px;}
+.form-style textarea{height: 75px;}
+.form-style :nth-last-child(-n+3){ line-height: 2; margin-top: 8px; text-align: center; }
+.form-style button{ width: 90px; }
+/* -------------------------------------------- */
+/* HEADER */
+header{ display:grid; grid-template-columns:4fr 2fr; height:24vh; width:100%; }
+header .header-left{ background-color:var(--main-brown); }
+header .header-right{ background-color:var(--main-white); }
+header>*{ align-items:center; display:flex; justify-content:center; padding:25px 25px; }
+header figure img{ max-height:100px; max-width:100%; }
+/* CONTACT SECTION */
+main .contact{ display:grid; grid-template-columns:4fr 2fr; height: 650px; width: inherit;}
+main .contact .contact-slider-container{background-image: url(/assets/imgs/Top-image-slider-1.jpg);}
+main .contact .contact-form-container{ background-color: var(--dark-blue); color: var(--main-white); display: flex; flex-direction: column; justify-content: space-evenly; padding: 40px; place-items: center; }
+main .contact .contact-form-container h3{ color: var(--main-white); line-height: 1.3; text-align: center; }
+/* WELCOME TO ROYAL MARBELLA */
+main .welcome{ align-items: center; display: grid; gap: 30px; grid-template-columns: 1fr 1fr; height: 600px; padding: 0 90px; width: inherit; }
+main .welcome>*{ display: flex; height: 100%; max-height: 450px; padding: 0 20px; }
+main .welcome .welcome-info{ flex-direction: column; gap: 20px;}
+main .welcome .welcome-info .welcome-info-conditions{ border-bottom: solid 1px var(--main-brown); margin-top: 4px; }
+main .welcome .welcome-slider{ height: inherit; max-height: 380px; margin-left: 60px; padding: 0; max-width: 480px; }
+main .welcome .welcome-slider img{ object-fit: cover; }
+/* ICONS SECTION */
+main .icons{ background-color: var(--main-brown); display: flex; flex-direction: column; height: 600px; }
+main .icons .icons-info{ display: grid; grid-template-columns: 1fr 1fr 1fr; height: 450px; padding: 80px 40px 0 40px; text-align: left; }
+main .icons .icons-info>div{ align-items: center; color: var(--dark-blue); display: flex; flex-direction: column; justify-content: space-between; }
+main .icons .icons-info>div img{ min-width: 0; }
+main .icons .icons-info>div ul li{ list-style: none; line-height: 100%; }
+main .icons .icons-info>div ul li::before{ color: var(--main-white); content: "\2022"; font-size: 60px; margin-right: 20px; position: relative; top: 10px; }
+main .icons .icons-links{ align-items: center; display: flex; flex-grow: 1; gap: 50px; justify-content: center; }
+/* VIRTUAL TOUR */
+main .virtual-tour{ background-image: url(/assets/imgs/Background\ pattern.png); background-position: 90% -160px; background-repeat: no-repeat; background-size: 700px; display: grid; height:auto; min-height: 550px; grid-template-columns: 1fr 1fr; padding: 90px 150px 90px 150px; }
+main .virtual-tour .virtual-tour-left{ align-items: center; display: flex; flex-direction: column; gap: 20px; padding-right: 90px; }
+main .virtual-tour .virtual-tour-left a{ margin-right: auto; }
+main .virtual-tour .virtual-tour-rigth img{ height: 375px; object-fit:cover; width: 670px; }
+/* GOOD DESIGN SECTION */
+main .good-design{display: flex;flex-direction: column;gap: 20px;height: 400px;padding: 0 150px;text-align: center;}
+main .good-design>figure::after{left: 102%;top: -45%;}
+main .good-design>figure::before{right: 3%;}
+/* REWARDING RENTAL PROGRAMME */
+main .rewarding-rental-programme{align-items: center;background-color: var(--secondary-brown);display: flex;flex-direction: column;gap: 20px;height: 600px;padding: 250px 150px 0 150px;text-align: center;}
+main .rewarding-rental-programme img{width: 620px;}
+/* DOWNLOAD BROCHURE */
+main .download-brochure { align-items: end; display: grid; gap: 50px; grid-template-columns: 1fr 1fr; height: 670px; padding: 0 0 100px 0; }
+main .download-brochure div { margin-right: auto; max-width: 550px; }
+main .download-brochure div h2 { margin-bottom: 10px; }
+main .download-brochure div * { margin-right: auto; text-align: left; }
+main .download-brochure > div .form-style > input, main .download-brochure > div .form-style > textarea { border: solid 1px var(--text-gray); width: 100%; }
+main .download-brochure > div .form-style > button { border: none; text-align: center; width: 190px; }
+main .download-brochure > div .form-style > button:hover { background-color: #EDBB8A; }
+/* LILFESTYLE */
+main .lifestyle-images { background-color: var(--dark-blue); height: 500px; }
+main .lifestyle-images h2 { color: var(--main-white); margin: auto; padding: 40px 0; text-align: center; }
+/* BOTTOM FORM */
+main .bottom-form{height: 720px; padding: 80px 150px; text-align: center;}
+main .bottom-form>*{margin-bottom: 25px;}
+main .bottom-form .form-style>input, main .bottom-form .form-style>textarea{border: solid 1px var(--text-gray); max-width: 620px; width: 80%; z-index: 1;}
+main .bottom-form .form-style [for="agreement"]{width: 500px;}
+main .bottom-form .form-style>button{border: none; text-align: center; width: 190px;}
+main .bottom-form .form-style>button:hover{background-color: #EDBB8A;}
+.transparency{background-image: url(/assets/imgs/Background\ pattern.png);background-repeat: no-repeat;background-size: contain;height: 800px;left: -200px;position: absolute;width: 800px;}
+/* FOOTER */
+footer div:first-child{background-color: var(--dark-blue); display: flex; place-items: center; justify-content: center; height: 300px;}
+footer div:first-child img{ max-width:70%; }
+footer div:last-child{background-color: var(--footer);color: var(--main-white);font-size: 14px;height: 50px;line-height: 50px;text-align: center;}
+
+/* MEDIA QUERIES */
+/* TABLET */
+@media (max-width: 1024px){
+  header { grid-template-columns:1fr; height: auto; }
+  main .contact { grid-template-columns:1fr; height: auto; }
+  main .contact>div { height: 650px; }
+  main .contact>div .form-style input:not([type="checkbox"]), main .contact>div .form-style textarea { width: 500px; }
+  main .welcome { gap: 50px; grid-template-columns:1fr; height: auto; padding-bottom: 100px; padding-top: 100px; }
+  main .welcome .welcome-slider { height: 100%; max-height: 450px; }
+  main .icons .icons-info { padding-left: 10px; padding-right: 10px; }
+  main .icons .icons-info>div ul li::before { margin-right: 8px; }
+  main .virtual-tour { gap: 50px; grid-template-columns:1fr; height: auto; padding-bottom: 100px; padding-top: 100px; }
+  main .virtual-tour .virtual-tour-left { padding-right: 0; }
+  main .good-design>figure::after { top: -40%; }
+  main .good-design>figure::before { right: 5%; }
+  main .rewarding-rental-programme { padding: 150px 100px 0 100px; }
+  main .rewarding-rental-programme img { width: 400px; }
+  main .download-brochure { grid-template-columns:1fr; height: auto; }
+  main .download-brochure figure { padding: 50px; }
+  main .download-brochure div { margin: 0 auto; }
+  main .lifestyle-images { height: 350px; }
+  main .bottom-form .form-style [for="agreement"]{max-width: 100%;}
+}
+/* MOBILE */
+@media (max-width: 768px){
+  h1, .h1{ font-size: 50px; }
+  h2, .h2{ font-size: 30px; }
+  h3, .h3{ font-size: 20px; }
+  h4, .h4{ font-size: 16px; }
+  h5, .h5{ font-size: 14px; }
+  main .contact>div:first-child { height: 400px; }
+  main .contact>div .form-style input:not([type="checkbox"]), main .contact>div .form-style textarea { width: 300px; }
+  main .welcome { padding: 50px 25px; }
+  main .welcome .welcome-slider { margin: 0 auto; scale: 0.9; }
+  main .welcome .welcome-slider::after { left: 5%; }
+  main .icons { height: auto; }
+  main .icons .icons-info{ gap: 40px; grid-template-columns: 1fr; height: auto;}
+  main .icons .icons-info>div ul li::before { margin-right: 8px; }
+  main .icons .icons-links{ flex-direction: column; gap: 10px; height: 100px; margin: 30px 0;}
+  main .virtual-tour { padding: 50px 25px; }
+  main .virtual-tour .virtual-tour-left { padding: 0 20px; }
+  main .good-design { padding: 30px 45px; }
+  main .good-design>figure::after { top: -37%; }
+  main .good-design>figure::before { right: 25px; }
+  main .rewarding-rental-programme { height: auto; padding: 100px 45px 50px 45px; }
+  main .rewarding-rental-programme img { width: 250px; }
+  main .download-brochure { padding: 50px 45px; }
+  main .download-brochure figure { padding: 50px; }
+  main .download-brochure div { margin: 0 auto; }
+  main .lifestyle-images { height: 300px; }  
+  main .bottom-form { height: auto; padding: 50px 45px;}
+  footer>div:first-child{height: auto; padding: 20px 0;}
+}
