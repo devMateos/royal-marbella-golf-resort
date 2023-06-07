@@ -40,7 +40,7 @@ header>*{ align-items:center; display:flex; justify-content:center; padding:25px
 header figure img{ max-height:100px; max-width:100%; }
 /* CONTACT SECTION */
 main .contact{ display:grid; grid-template-columns:4fr 2fr; height: 650px; width: inherit;}
-main .contact .contact-slider-container{background-image: url(assets/imgs/Top-image-slider-1.jpg);}
+main .contact .contact-slider-container{background-image: url(https://devmateos.github.io/royal-marbella-golf-resort/assets/imgs/Top-image-slider-1.jpg);}
 main .contact .contact-form-container{ background-color: var(--dark-blue); color: var(--main-white); display: flex; flex-direction: column; justify-content: space-evenly; padding: 40px; place-items: center; }
 main .contact .contact-form-container h3{ color: var(--main-white); line-height: 1.3; text-align: center; }
 /* WELCOME TO ROYAL MARBELLA */
