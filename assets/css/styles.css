@@ -22,8 +22,8 @@ h5, .h5{ color: var(--dark-blue); font-size: 18px; }
 .button-link2{ background-color: var(--dark-blue); border-radius: 25px; color: var(--main-white); display: flex; font-size: 14px; height: 50px; place-items: center; place-content: center; width: 180px; }
 .button-link2:hover{ background-color: #23363E;}
 /* ICONS */
-.left-arrow-slider::before{ background-image: url(/assets/svg/arrow-left-solid.svg); background-repeat: no-repeat; content: "";   display: flex; height: 20px; position: relative; top: 50%; transform: translateY(-50%); min-width: 20px; }
-.right-arrow-slider::after{ background-image: url(/assets/svg/arrow-right-solid.svg); background-repeat: no-repeat; content: "";   display: flex; height: 20px; left: 10%; position: relative; top: 50%; transform: translateY(-50%); min-width: 20px; }
+.left-arrow-slider::before{ background-image: url(assets/svg/arrow-left-solid.svg); background-repeat: no-repeat; content: "";   display: flex; height: 20px; position: relative; top: 50%; transform: translateY(-50%); min-width: 20px; }
+.right-arrow-slider::after{ background-image: url(assets/svg/arrow-right-solid.svg); background-repeat: no-repeat; content: "";   display: flex; height: 20px; left: 10%; position: relative; top: 50%; transform: translateY(-50%); min-width: 20px; }
 /* FORM-STYLE */
 .form-style{ display: flex; flex-direction: column; font-size: 14px; gap: 4px; place-items: center; }
 .form-style input:not([type="checkbox"]), .form-style textarea{ border-radius: 10px; border-style: none; outline: none; padding: 4px 8px; width: 250px;}
@@ -40,7 +40,7 @@ header>*{ align-items:center; display:flex; justify-content:center; padding:25px
 header figure img{ max-height:100px; max-width:100%; }
 /* CONTACT SECTION */
 main .contact{ display:grid; grid-template-columns:4fr 2fr; height: 650px; width: inherit;}
-main .contact .contact-slider-container{background-image: url(/assets/imgs/Top-image-slider-1.jpg);}
+main .contact .contact-slider-container{background-image: url(assets/imgs/Top-image-slider-1.jpg);}
 main .contact .contact-form-container{ background-color: var(--dark-blue); color: var(--main-white); display: flex; flex-direction: column; justify-content: space-evenly; padding: 40px; place-items: center; }
 main .contact .contact-form-container h3{ color: var(--main-white); line-height: 1.3; text-align: center; }
 /* WELCOME TO ROYAL MARBELLA */
@@ -59,7 +59,7 @@ main .icons .icons-info>div ul li{ list-style: none; line-height: 100%; }
 main .icons .icons-info>div ul li::before{ color: var(--main-white); content: "\2022"; font-size: 60px; margin-right: 20px; position: relative; top: 10px; }
 main .icons .icons-links{ align-items: center; display: flex; flex-grow: 1; gap: 50px; justify-content: center; }
 /* VIRTUAL TOUR */
-main .virtual-tour{ background-image: url(/assets/imgs/Background\ pattern.png); background-position: 90% -160px; background-repeat: no-repeat; background-size: 700px; display: grid; height:auto; min-height: 550px; grid-template-columns: 1fr 1fr; padding: 90px 150px 90px 150px; }
+main .virtual-tour{ background-image: url(assets/imgs/Background\ pattern.png); background-position: 90% -160px; background-repeat: no-repeat; background-size: 700px; display: grid; height:auto; min-height: 550px; grid-template-columns: 1fr 1fr; padding: 90px 150px 90px 150px; }
 main .virtual-tour .virtual-tour-left{ align-items: center; display: flex; flex-direction: column; gap: 20px; padding-right: 90px; }
 main .virtual-tour .virtual-tour-left a{ margin-right: auto; }
 main .virtual-tour .virtual-tour-rigth img{ height: 375px; object-fit:cover; width: 670px; }
@@ -88,7 +88,7 @@ main .bottom-form .form-style>input, main .bottom-form .form-style>textarea{bord
 main .bottom-form .form-style [for="agreement"]{width: 500px;}
 main .bottom-form .form-style>button{border: none; text-align: center; width: 190px;}
 main .bottom-form .form-style>button:hover{background-color: #EDBB8A;}
-.transparency{background-image: url(/assets/imgs/Background\ pattern.png);background-repeat: no-repeat;background-size: contain;height: 800px;left: -200px;position: absolute;width: 800px;}
+.transparency{background-image: url(assets/imgs/Background\ pattern.png);background-repeat: no-repeat;background-size: contain;height: 800px;left: -200px;position: absolute;width: 800px;}
 /* FOOTER */
 footer div:first-child{background-color: var(--dark-blue); display: flex; place-items: center; justify-content: center; height: 300px;}
 footer div:first-child img{ max-width:70%; }
